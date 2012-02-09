@@ -14,4 +14,4 @@ while primes.length < 10001
   alternate = !alternate
 end
 
-p primes[10000]
+p primes.pop
