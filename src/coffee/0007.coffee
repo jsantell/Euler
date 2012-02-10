@@ -3,7 +3,8 @@ i = 5
 alternate = 0
 
 isPrime = (n) ->
-  for k in [2..Math.sqrt(n)]
+  sqRoot = Math.sqrt n # atleast one factor of n must be <= sqrt(n)
+  for k in [2..sqRoot]
     return false unless n % k
   true
 
