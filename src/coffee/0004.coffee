@@ -6,8 +6,8 @@ isPalindrome = (n) ->
   n is n.split('').reverse().join('')
 
 for x in [i..0]
-  do (x) -> for y in [j..0]
-    do (y) -> palindromes.push x * y if isPalindrome x * y
+  for y in [j..0]
+    palindromes.push x * y if isPalindrome x * y
 
 console.log Math.max.apply(Math, palindromes)
 
