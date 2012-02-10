@@ -1,10 +1,3 @@
-limit = 1000000
 palindromes = []
-
-def is_palindrome n
-  n == n.reverse
-end
-
-(1..limit).each { |i| palindromes << i if is_palindrome(i.to_s) and is_palindrome(i.to_s 2) } 
-
+(1..1000000).each { |i| palindromes << i if i.to_s == i.to_s.reverse and i.to_s(2) == i.to_s(2).reverse } 
 p palindromes.reduce :+
