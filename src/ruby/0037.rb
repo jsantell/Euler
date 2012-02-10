@@ -22,4 +22,4 @@ while trunc_primes.length < 11
   alternate = !alternate
 end
 
-p trunc_primes.reduce(:+)
+p trunc_primes.reduce :+
