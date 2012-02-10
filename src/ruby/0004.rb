@@ -7,9 +7,7 @@ def is_palindrome n
 end
 
 i.downto 1 do |x|
-  j.downto 1 do |y|
-    palindromes << x * y if is_palindrome x * y
-  end
+  j.downto(1) { |y| palindromes << x * y if is_palindrome x * y }
 end
 
 p palindromes.max
